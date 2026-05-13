@@ -38,6 +38,11 @@ Examining trends across the different socioeconomic indicators helps to illustra
 
 Overall, there are many factors that contribute to these socioeconomic indicators across Chicago neighborhoods. Through examining these associations and other contextual considerations, it is clear that hardship in Chicago is not the result of individual circumstances but rooted in structural and historical forces that continue to affect communities today. Understanding these patterns is the first step towards policy decisions and interventions to bridge socioeconomic disparities across Chicago and other urban areas.
 
+### Sources:
+
+1. [WTTW - Mapping Chicago's Racial Segregation](https://www.wttw.com/firsthand/segregation/mapping-chicago-racial-segregation)
+2. [Urban Institute - Nine Charts about Wealth Inequality in America](https://apps.urban.org/features/wealth-inequality-charts/)
+
 <div class="left">
 {% include elements/button.html link="https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2/about_data" text="The Data" %}
 </div>
