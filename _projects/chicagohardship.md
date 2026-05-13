@@ -1,7 +1,12 @@
 ---
 name: How is Hardship Defined Across Chicago Neighborhoods?
-tools: [Python, Altair, vega-lite]
+tools: [Python, Altair, HTML, vega-lite]
 description: Visualizing socioeconomic indicators across Chicago neighborhoods
+custom_js:
+  - vega.min
+  - vega-lite.min
+  - vega-embed.min
+  - justcharts
 ---
 
 # How is Hardship Defined Across Chicago Neighborhoods?
@@ -30,7 +35,7 @@ The second contextual chart from the Urban Institute shows average family wealth
 
 Through this interactive scatterplot, choose one of the six socioeconomic indicators to see how it is distributed compared to, and correlates with Hardship Index across all neighborhoods with a trendline to accentuate the relationship. Hover over any of the points to see the name of the neighborhood along with its calculated Hardship Index.
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/mainScatter.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/mainScatter.json"></vegachart>
 
 Examining trends across the different socioeconomic indicators helps to illustrate how they relate to and potentially impact the calculated hardship score that an aggregation of them. We can see the most clear correlations between hardship, households below poverty, and per capita income. There is a strong positive association between housholds below poverty and hardship, while a strong negative between hardship and per capita income (while it does not appear to be a linear association). Past this, we can also see a positive association, albeit weaker, between hardship and unemployment, housing crowding, education, and age. While further analysis is needed to determine any kind of causal relationship or influence on the hardship value, their associations give some insight into how hardship is measured in Chicago.
 
