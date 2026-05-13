@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+  Updates for JPN Fall 2024
+  FALL2024ID7498
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="How is Hardship Defined Across Chicago Neighborhoods?">
+  <meta property="og:description" content="Visualizing socioeconomic indicators across Chicago neighborhoods">
+  <meta property="og:image" content="https://media.tenor.com/8RcIoWTKYR4AAAAe/scuze-corgi.png">
+
+  <title>How is Hardship Defined Across Chicago Neighborhoods?</title>
+  <meta name="description" content="Visualizing socioeconomic indicators across Chicago neighborhoods">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Luke Hull</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="how-is-hardship-defined-across-chicago-neighborhoods">How is Hardship Defined Across Chicago Neighborhoods?</h1>
+
+<p><em>Author: Luke Hull</em></p>
+
+<p>The City of Chicago tracks different socioeconomic indicators across its 77 neighborhoods or community areas, calculating a composite score called Hardship index. It considers income, unemployment, housing crowding, poverty, education, and age. These statistics, tracked from 2008 to 2012 help the city understand how hardship is distributed across its neighborhoods. They influence policymakers, researchers, and residents and allow them to identify where resources and interventions are most necessary. These visualizations explore the distribution of these indicators in conjunction with each other across city using data from the publicly-available Chicago Data Portal (cited below).</p>
+
+<p>Chicago has a rich but troubled history. Redlining practices, their lingering effects, and institutional racism have plagued many urban areas with Chicago being no exception. This segregation still shows its effects in many ways including wealth gaps, education disparity, and economic disadvantage. While visualizing socioeconomic indicators in Chicago, it would be irresponsible to ignore the history that contributes to disparities across its neighborhoods.</p>
+
+<h2 id="contextual-visualization-1-racial-borders-in-chicago-2010">Contextual Visualization 1: Racial Borders in Chicago (2010)</h2>
+
+<p><img src="/assets/pngs/segregation-2010-map-01_01.png" /></p>
+
+<p><em>Source: WTTW - Mapping Chicago’s Racial Segregation (https://www.wttw.com/firsthand/segregation/mapping-chicago-racial-segregation)</em></p>
+
+<p>This dop map illustrates the racial segregation across Chicago’s neighborhoods as recently as 2010. These dots, colored by race, show strong petterns with White residents concentrated on the North Side, Black residents concentrated in the South and West Sides, and Latino residents in areas between. While these visualizations do not examine the grographic distribution of these socioeconomic indicators and hardship scores, it is important to recognize the segregation across Chicago and note the potential influence.</p>
+
+<h2 id="contextual-visualization-2-wealth-disparities-by-race-and-ethnicity-through-time-1963-2022">Contextual Visualization 2: Wealth Disparities by Race and Ethnicity through Time (1963-2022)</h2>
+
+<p><img src="/assets/pngs/average-family-wealth-by-race-and-ethnicity-1963-2022.png" /></p>
+
+<p>The second contextual chart from the Urban Institute shows average family wealth by race and ethnicity from 1963 to 2022. While White families have seen their wealth grow dramatically over the past six decades, Black and Hispanic families have remained largely unchanged, comparatively, in the same period. This growing wealth gap nationally provides critical context for the income disparities seen across Chicago neighborhoods, especially considering the racial segregation still present in the City.</p>
+
+<h2 id="exploring-the-data">Exploring the Data</h2>
+
+<p>Through this interactive scatterplot, choose one of the six socioeconomic indicators to see how it is distributed compared to, and correlates with Hardship Index across all neighborhoods with a trendline to accentuate the relationship. Hover over any of the points to see the name of the neighborhood along with its calculated Hardship Index.</p>
+
+<vegachart schema-url="/assets/json/mainScatter.json" style="width: 100%"></vegachart>
+
+<p>Examining trends across the different socioeconomic indicators helps to illustrate how they relate to and potentially impact the calculated hardship score that an aggregation of them. We can see the most clear correlations between hardship, households below poverty, and per capita income. There is a strong positive association between housholds below poverty and hardship, while a strong negative between hardship and per capita income (while it does not appear to be a linear association). Past this, we can also see a positive association, albeit weaker, between hardship and unemployment, housing crowding, education, and age. While further analysis is needed to determine any kind of causal relationship or influence on the hardship value, their associations give some insight into how hardship is measured in Chicago.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Overall, there are many factors that contribute to these socioeconomic indicators across Chicago neighborhoods. Through examining these associations and other contextual considerations, it is clear that hardship in Chicago is not the result of individual circumstances but rooted in structural and historical forces that continue to affect communities today. Understanding these patterns is the first step towards policy decisions and interventions to bridge socioeconomic disparities across Chicago and other urban areas.</p>
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2/about_data">
+  The Data
+</a>
+</div>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/lhull3/lhull3.github.io/tree/main/python_notebooks/finalproject.ipynb">
+  The Analysis
+</a>
+</div>
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>A. P. Corgi</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:username@domain.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/jnaiman"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.youtube.com/your_channel_name"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#ff0000'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+
+</div>
+
+  Theme by <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a> and <a href="https://github.com/4dcu-be/4dcu.be">4dcu.be</a>.
+
+  
+<!--<small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+-->
+
+</footer>
+
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+<!--
+end of checks! JPN
+-->
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
